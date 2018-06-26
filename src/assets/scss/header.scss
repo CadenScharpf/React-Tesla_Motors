@@ -1,0 +1,119 @@
+@import './themes.scss';
+//ROOT
+.navbar-inverse {
+    background-image: none;
+    background-color: transparent;
+    border-style:none;
+
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+//CENTER LINKS
+#centerLinks {
+    text-align:center;
+    a {
+        color:Grey;
+    }
+}
+
+//BRAND
+.navbar-inverse {
+    .navbar-brand { //BRAND COLOR
+        color: red;
+        font-family: Tesla;
+        font-size: 25px;
+    }
+}
+
+.navbar-inverse {
+    .navbar-brand:focus { //BRAND SELECTED COLOR
+        color: lightGrey;
+    }
+    .navbar-brand:hover{ //BRAND HOVER COLOR
+        color: lightGrey;
+    }
+}
+
+//SIDE LINKS
+.navbar-inverse {
+    .navbar-nav > li > a{ //SIDE LINK COLORS
+        color: White; 
+    }
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {//SIDE LINK HOVER COLORS
+    color: lightGrey;
+}
+
+//TOGGLE-BUTTTON
+.navbar-inverse .navbar-toggle { //TOGGLE-BUTTON
+border-color: grey;
+background-color: lightgray;
+}
+  .navbar-inverse .navbar-toggle:hover,
+  .navbar-inverse .navbar-toggle:focus {//TOGGLE-BUTTON HOVER/ACTIVE BACKGROUND
+    background-color: gray;
+}
+
+  
+//DROPDOWN
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover { //OPEN DRODOWN BOX
+    color: lightGrey;
+    background-color: #d3d3d3;
+    background-image:none;
+}
+
+//Mobile NAV
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {//Collapsed Bar
+  border-color: grey;
+}
+
+
+
+@media (max-width: 1000px) {
+    .navbar-header {
+            float: none;
+    }
+    .navbar-toggle {
+            display: block;
+    }
+    .navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+            display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .navbar-nav {
+            float: none!important;
+            margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+            float: none;
+    }
+    .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+    }
+.navbar-form {
+    padding: 10px 15px;
+    margin-top: 8px;
+    margin-right: -15px;
+    margin-bottom: 8px;
+    margin-left: -15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+    width:auto;
+    float:none!important;
+}
+}
